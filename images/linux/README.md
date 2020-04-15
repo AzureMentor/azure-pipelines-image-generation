@@ -1,0 +1,1 @@
+Azure Pipelines Linux-based images are now in the [virtual-environments](https://github.com/actions/virtual-environments) repository. Please submit issues and pull requests in the virtual-environments repository instead. You can still view the full commit history of the images in this repository.

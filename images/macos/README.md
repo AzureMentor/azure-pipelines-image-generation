@@ -1,0 +1,1 @@
+The README.md files for the Azure Pipelines Mac-based images are now in the [virtual-environments](https://github.com/actions/virtual-environments) repository. Please submit issues in the virtual-environments repository instead.

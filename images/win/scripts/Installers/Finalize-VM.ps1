@@ -15,7 +15,7 @@ Write-Host "Clean up various directories"
     "$env:windir\\logs",
     "$env:windir\\winsxs\\manifestcache",
     "$env:windir\\Temp",
-    "$env:windir\\Installer"
+    "$env:TEMP"
 ) | ForEach-Object {
     if (Test-Path $_) {
         Write-Host "Removing $_"
@@ -27,5 +27,8 @@ Write-Host "Clean up various directories"
         catch { $global:error.RemoveAt(0) }
     }
 }
+
+$winInstallDir = "$env:windir\\Installer"
+New-Item -Path $winInstallDir -ItemType Directory -Force
 
 $ErrorActionPreference = 'Continue'

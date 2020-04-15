@@ -26,7 +26,9 @@ $env:NPM_CONFIG_CACHE = $CachePath
 
 npm config set registry http://registry.npmjs.org/
 
-npm install -g gulp-cli
-npm install -g grunt-cli
-npm install -g bower
 npm install -g cordova
+npm install -g grunt-cli
+npm install -g gulp-cli
+npm install -g parcel-bundler
+npm install -g --save-dev webpack webpack-cli
+npm install -g yarn
